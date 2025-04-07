@@ -1,0 +1,17 @@
+﻿@model Venue
+using EventEaseBookingSystem.Models;
+
+@{
+    ViewData["Title"] = "Venue Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <strong>Venue Name:</strong> @Model.VenueName<br />
+    <strong>Location:</strong> @Model.Location<br />
+    <strong>Capacity:</strong> @Model.Capacity<br />
+    <strong>Image:</strong> <img src="@Model.ImageUrl" alt="Venue Image" style="width:100px;" />
+</div>
+
+<a asp-action="Index" style="background-color: #bdd9bf; color: black; padding: 10px 15px; border-radius: 5px; text-decoration: none;" class="btn btn-secondary">Back to List</a>
